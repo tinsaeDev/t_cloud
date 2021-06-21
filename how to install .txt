@@ -1,0 +1,4 @@
+This system needs to be installed before being used, to install the system follow the following steps
+	1. create /home/tcloud direcory
+	2. change the owner of the created directory to www-data
+	3. then visit install/InstallationForm.html from your browser

@@ -1,0 +1,1305 @@
+*{
+	-moz-user-select:none;
+	!outline-width: 0.01px;
+	!outline-style: solid;
+	!outline-color: red;
+}
+body{
+	margin: 0;
+	padding: 0;
+}
+.account-div{
+	
+	width: 20%;
+	display: flex;
+	justify-content: center;
+}
+.account-div-logout,.account-div-changepassword{
+		
+		color: white;
+		background-color: #0074e8;
+		font-family: ubuntu;
+		cursor: pointer;
+		border:none;
+		outline: none;
+		margin-right: 5px;
+
+		padding: 10px;
+		border-radius: 5px;
+
+	}
+.account-div-logout:hover,.account-div-changepassword:hover{
+		background-color: white;
+		color: #0074e8;
+		border-style: solid;
+		border-width: 1px;
+		border-color: #0074e8;
+	}
+.fileexplorer{
+	width:100vw;
+	height: 100vh;
+	background-color: 	background-color: #fafafa;;
+
+	display: flex;
+	flex-flow: column;
+
+	overflow: hidden;
+
+}
+.fileexplorer-omnibar{
+	height: 20%;
+	background-color: #f5f5f5;
+	margin: 5px 0;
+	
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.fileexplorer-omnibar-home-back{
+	width: 20%;
+	display: flex;
+	justify-content:flex-start;
+}
+.fileexplorer-omnibar-home{
+	border:none;
+	width: 40%;
+	text-align: center;
+	padding: 10px 0;
+	background-color: transparent;
+	cursor: pointer;
+}
+.fileexplorer-omnibar-home:hover{
+	background-color: #ebebeb;	
+}
+.fileexplorer-omnibar-back{
+	
+	border:none;
+	width: 40%;
+	text-align: center;
+	padding: 10px 0;
+	background-color: transparent;
+	cursor: pointer;
+}
+.fileexplorer-omnibar-home-image{
+	width: 40px;
+	height: 40px;
+}
+.fileexplorer-omnibar-back-image{
+	width: 40px;
+	height: 40px;
+}
+.fileexplorer-omnibar-back:hover{
+	background-color: #ebebeb;	
+}
+.fileexplorer-path{
+	width: 55%;
+	height: 90%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+} 
+
+.fileexplorer-path-address{
+	
+	font-family: ubuntu;
+	font-size: 20px;
+	width: 100%;
+	transition: * 2s;
+	!display: none;
+}
+
+
+.fileexplorer-search-input{
+	font-family: ubuntu;
+	font-size: 20px;
+	width: 100%;
+	height: 70%;
+	display: none;
+}
+.fileexplorer-search{
+	height: 70%;
+	background-color: #0074e8;
+	color:white;
+	font-family: ubuntu;
+	border:none;
+}
+
+.fileexplorer-new-file{
+	border:none;
+	padding: 10px;
+	background-color: #0a84ff;
+	color: white;
+	cursor: pointer;
+}
+.fileexplorer-new-file:hover{
+	background-color: #0060df;
+}
+.fileexplorer-new-folder{
+	border:none;
+	padding: 10px;
+	background-color: #0a84ff;
+	color: white;
+	cursor: pointer;
+}
+.fileexplorer-new-folder:hover{
+	background-color: #0060df;
+}
+
+.storage-usage{
+	font-family: ubuntu;
+}
+
+.fileexplorer-explorer{
+	height: 80%;
+	min-height: 80%;
+	background-color: #fafafa;
+	margin: 5px 0;
+
+	display: flex;
+	flex-flow: row;
+}
+.fileexplorer-explorer-navigator{
+	width: 20%;
+	background-color: #dce0e6;
+
+}
+.fileexplorer-explorer-navigator-button{
+	border:none;
+	color: #4d4739;
+	width: 100%;
+	text-align: left;
+	padding: 10px 0;
+	background-color: unset;
+	cursor: pointer;
+	margin: 5px 0;
+	
+	display: flex;
+	align-items: center;
+
+}
+
+.fileexplorer-explorer-navigator-button *{
+	margin-right:  10px;
+}
+
+.fileexplorer-explorer-navigator-button:hover{
+	background-color: #c6c9ce;	
+}
+.fileexplorer-explorer-browser-outer{
+	display: flex;
+	width: 80%;
+}
+.fileexplorer-explorer-browser{
+	width: 70%;
+	display: flex;
+	flex-flow: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+
+	overflow: auto;
+	background-color: #fafafa;
+
+}
+.fileexplorer-explorer-browser-file{
+	width: 100px;
+	height: 100px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column;
+
+	margin: 5px;
+	cursor: pointer;
+	margin: 5px;
+}
+.fileexplorer-explorer-browser-file-image{
+	width: 100%;
+	height: 70%;
+}
+.fileexplorer-explorer-browser-file-image:hover{
+	background-color: #a6c5fa;
+}
+.fileexplorer-explorer-browser-file-name{
+	width: 100%;
+	height: 30%;
+
+	font-family: ubuntu;
+	text-align: center;
+}
+.fileexplorer-explorer-browser-info{
+	
+	width: 30%;
+	height: 100%;
+	background-color:#e9e9e9; 
+
+	display:flex;
+	flex-flow: column;
+}
+.fileexplorer-explorer-browser-info-info{
+
+	display: flex;
+	margin: 10px 0;
+	padding: 10px;
+}
+.fileexplorer-explorer-browser-info-info:hover{
+	background-color: #0074e8;
+	color: white;
+}
+
+.fileexplorer-explorer-browser-info-info-attribute{
+	font-weight: bolder;
+	font-family: ubuntu;
+	width: 20%;
+}
+
+.fileexplorer-explorer-browser-info-info-value{
+	width: 80%;
+	font-family: ubuntu;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fileexplorer-explorer-footer{
+	background-color: magenta;
+	height: 400px;
+	width: 100%;
+}
+
+
+
+.popup-menu-file{
+
+	position: absolute;
+	display: none;
+
+	flex-flow: column;
+	justify-content: center;
+	align-self: center;
+	width: 200px;
+	background-color: red;
+}
+
+.popup-menu-file-menu{
+	border:none;
+	display: block;
+	width: 100%;
+	text-align: left;
+	height: 50px;
+	padding:10px;
+}
+.popup-menu-file-menu:hover{
+	background-color: #a6c5fa;
+}
+
+
+
+
+
+
+.popup-menu-trashed-file{
+
+	position: absolute;
+	display: none;
+
+	flex-flow: column;
+	justify-content: center;
+	align-self: center;
+	width: 200px;
+	background-color: red;
+}
+
+.popup-menu-trashed-file-menu{
+	border:none;
+	display: block;
+	width: 100%;
+	text-align: left;
+	height: 50px;
+	padding:10px;
+}
+.popup-menu-trashed-file-menu:hover{
+	background-color: #a6c5fa;
+}
+
+
+
+
+
+
+
+
+
+
+
+.popup-menu-ishared-file{
+
+	position: absolute;
+	display: none;
+
+	flex-flow: column;
+	justify-content: center;
+	align-self: center;
+	width: 200px;
+	background-color: red;
+}
+
+.popup-menu-ishared-file-menu{
+	border:none;
+	display: block;
+	width: 100%;
+	text-align: left;
+	height: 50px;
+	padding:10px;
+}
+.popup-menu-ishared-file-menu:hover{
+	background-color: #a6c5fa;
+}
+
+
+
+
+
+
+.popup-menu-theyShared-file{
+
+	position: absolute;
+
+
+	flex-flow: column;
+	justify-content: center;
+	align-self: center;
+	width: 200px;
+	background-color: red;
+}
+
+.popup-menu-theyShared-file-menu{
+	border:none;
+	display: block;
+	width: 100%;
+	text-align: left;
+	height: 50px;
+	padding:10px;
+}
+.popup-menu-theyShared-file-menu:hover{
+	background-color: #a6c5fa;
+}
+
+
+
+
+
+
+
+
+
+.popup-menu-folder{
+
+	position: absolute;
+
+	display: none;
+	flex-flow: column;
+	justify-content: center;
+	align-self: center;
+	width: 200px;
+
+	background-color: white;
+	
+}
+
+.popup-menu-folder-menu{
+	border:none;
+	display: block;
+	width: 100%;
+	text-align: left;
+	height: 50px;
+	padding:10px;
+}
+
+.popup-menu-folder-menu:hover{
+	background-color: #a6c5fa;
+}
+.popup-menu-explorer{
+	position: absolute;
+	display: none;
+	flex-flow: column;
+	justify-content: center;
+	align-self: center;
+	width: 200px;
+	background-color: white;
+}
+
+.popup-menu-explorer-menu{
+	border:none;
+	display: block;
+	width: 100%;
+	text-align: left;
+	height: 50px;
+}
+
+.popup-menu-explorer-menu:hover{
+	background-color: #a6c5fa;
+}
+
+
+
+.file-download-popup-overlay{
+	background-color: black;
+	opacity: 0.5;
+	position: absolute;
+
+	height: 100vh;
+	width: 100vw;
+
+	z-index: 10;
+	top: 0;
+	left: 0;
+	display: none;
+
+}
+.file-download-popup{
+
+	position: absolute;
+	z-index: 11;
+
+	top: calc( ( 100vh / 2) - 250px );
+	left: calc( ( 100vw / 2 ) - 200px );	
+	
+
+	width: 400px;
+	height: 500px;
+
+	display: none;
+	flex-flow: column;
+	align-items: center;
+	background-color: white;
+
+
+	border-style: solid;
+	border-width: 3px;
+	border-color: #588dff;
+
+	border-radius: 10px;
+
+}
+
+.file-download-popup-image{
+
+	height: 250px;
+	width: 200px;
+}
+
+.file-download-popup-detail{
+	width: 100%;
+	display: flex;
+	flex-flow: column;
+
+}
+
+.file-download-popup-detail-attribute{
+	font-family: ubuntu;
+	padding : 20px ;
+}
+
+.file-download-popup-download{
+	width: 90%;
+	border:none;
+	background-color: #4d8cf4;
+	color: white;
+	cursor: pointer;
+	padding: 10px;
+}
+
+
+
+.file-download-popup-cancel{
+	width: 90%;
+	border:none;
+	background-color: red;
+	color: white;
+	cursor: pointer;
+	padding: 10px;
+	margin: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.rename-file-popup-overlay{
+	position: fixed;
+	z-index: 10;
+	width: 100vw;
+	height: 100vh;
+	background-color: black;
+	opacity: .5;
+	left: 0;
+	top: 0;
+	display: none;
+}
+
+.rename-file-popup{
+	position: fixed;
+	z-index: 11;
+
+	top: calc( (100vh / 2) - 100px ) ;
+	left: calc( (100vw / 2) - 200px ) ;
+
+	display: flex;
+	flex-flow: column;
+	height: 200px;
+	width:400px;
+	background-color: #efebe7;
+	
+	border-style: solid;
+	border-width: 3px;
+	border-color: #588dff;
+
+	display: none;
+}
+
+.rename-file-popup-header{
+	display: flex;
+	align-items: center;
+	background-color: #588dff;
+	height: 20%;
+}
+
+.rename-file-popup-header-title{
+	font-family: ubuntu;
+	font-size: 15pt;
+	color: white;
+	padding: 5px;
+}
+
+.rename-file-popup-content{
+	display: flex;
+	flex-flow: column;
+	height: 80%;
+	align-items: center;
+	justify-content: space-around;
+	padding: 10px;
+
+}
+
+.rename-file-popup-content-input{
+	width: 100%;
+	border:none;
+	background-color: #efebe7;
+	border-bottom-style: solid;
+	border-bottom-color: #588dff;
+	border-bottom-width: 3px;
+}
+
+.rename-file-popup-content-buttons{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.rename-file-popup-content-buttons-raname{
+	border:none;
+	background-color: #588dff;
+	color: white;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.rename-file-popup-content-buttons-raname:hover{
+	opacity: 0.5;
+}
+
+.rename-file-popup-content-buttons-cancel{
+	border:none;
+	background-color: red;
+	color: white;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.rename-file-popup-content-buttons-cancel:hover{
+	opacity: 0.5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.create-folder-popup-overlay{
+	position: fixed;
+	z-index: 10;
+	width: 100vw;
+	height: 100vh;
+	background-color: black;
+	opacity: .5;
+	left: 0;
+	top: 0;
+	display: none;
+
+}
+
+.create-folder-popup{
+	position: fixed;
+	z-index: 11;
+	top: calc( (100vh / 2) - 100px ) ;
+	left: calc( (100vw / 2) - 200px ) ;
+	display: flex;
+	flex-flow: column;
+	height: 200px;
+	width:400px;
+	background-color: white;
+
+	border-style: solid;
+	border-width: 3px;
+	border-color: #588dff;
+
+	display: none;
+}
+
+.create-folder-popup-header{
+	display: flex;
+	align-items: center;
+	background-color: #588dff;
+	height: 20%;
+}
+
+.create-folder-popup-header-title{
+	font-family: ubuntu;
+	font-size: 15pt;
+	color: white;
+	padding: 5px;
+}
+
+.create-folder-popup-content{
+	display: flex;
+	flex-flow: column;
+	height: 80%;
+	align-items: center;
+	justify-content: space-around;
+	padding: 10px;
+
+}
+
+.create-folder-popup-content-input{
+	width: 100%;
+	border:none;
+	border-bottom-style: solid;
+	border-bottom-color: #588dff;
+	border-bottom-width: 3px;
+}
+
+.create-folder-popup-content-buttons{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.create-folder-popup-content-buttons-create{
+	border:none;
+	background-color: #588dff;
+	color: white;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.create-folder-popup-content-buttons-create:hover{
+	opacity: 0.5;
+}
+
+.create-folder-popup-content-buttons-cancel{
+	border:none;
+	background-color: red;
+	color: white;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.create-folder-popup-content-buttons-cancel:hover{
+	opacity: 0.5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.delete-file-popup-overlay{
+	position: fixed;
+	z-index: 10;
+	width: 100vw;
+	height: 100vh;
+	background-color: black;
+	opacity: .5;
+	left: 0;
+	top: 0;
+	display: none;
+}
+
+.delete-file-popup{
+	position: fixed;
+	z-index: 11;
+
+	top: calc( (100vh / 2) - 100px ) ;
+	left: calc( (100vw / 2) - 200px ) ;
+
+	display: flex;
+	flex-flow: column;
+	height: 200px;
+	width:400px;
+	background-color: white;
+
+	border-style: solid;
+	border-width: 3px;
+	border-color: #588dff;
+
+	display: none;
+
+}
+
+.delete-file-popup-header{
+	display: flex;
+	align-items: center;
+	background-color: #588dff;
+	height: 20%;
+}
+
+.delete-file-popup-header-title{
+	font-family: ubuntu;
+	font-size: 15pt;
+	color: white;
+	padding: 5px;
+}
+
+.delete-file-popup-content{
+	display: flex;
+	flex-flow: column;
+	height: 80%;
+	align-items: center;
+	justify-content: space-around;
+	padding: 10px;
+
+}
+
+.delete-file-popup-content-question{
+	width: 100%;
+	font-family: ubuntu;
+}
+
+.delete-file-popup-content-buttons{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.delete-file-popup-content-buttons-delete{
+	border:none;
+	background-color: #588dff;
+	color: white;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.delete-file-popup-content-buttons-delete:hover{
+	opacity: 0.5;
+}
+
+.delete-file-popup-content-buttons-cancel{
+	border:none;
+	background-color: red;
+	color: white;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.delete-file-popup-content-buttons-cancel:hover{
+	opacity: 0.5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.trash-file-popup-overlay{
+	position: fixed;
+	z-index: 10;
+	width: 100vw;
+	height: 100vh;
+	background-color: black;
+	opacity: .5;
+	left: 0;
+	top: 0;
+	display: none;
+}
+
+.trash-file-popup{
+	position: fixed;
+	z-index: 11;
+
+	top: calc( (100vh / 2) - 100px ) ;
+	left: calc( (100vw / 2) - 200px ) ;
+
+	display: flex;
+	flex-flow: column;
+	height: 200px;
+	width:400px;
+	background-color: white;
+
+	border-style: solid;
+	border-width: 3px;
+	border-color: #588dff;
+
+	display: none;
+
+}
+
+.trash-file-popup-header{
+	display: flex;
+	align-items: center;
+	background-color: #588dff;
+	height: 20%;
+}
+
+.trash-file-popup-header-title{
+	font-family: ubuntu;
+	font-size: 15pt;
+	color: white;
+	padding: 5px;
+}
+
+.trash-file-popup-content{
+	display: flex;
+	flex-flow: column;
+	height: 80%;
+	align-items: center;
+	justify-content: space-around;
+	padding: 10px;
+
+}
+
+.trash-file-popup-content-question{
+	width: 100%;
+	font-family: ubuntu;
+}
+
+.trash-file-popup-content-buttons{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.trash-file-popup-content-buttons-delete{
+	border:none;
+	background-color: #588dff;
+	color: white;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.trash-file-popup-content-buttons-delete:hover{
+	opacity: 0.5;
+}
+
+.trash-file-popup-content-buttons-cancel{
+	border:none;
+	background-color: red;
+	color: white;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.trash-file-popup-content-buttons-cancel:hover{
+	opacity: 0.5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.upload-file-popup-overlay{
+	position: fixed;
+	z-index: 10;
+	width: 100vw;
+	height: 100vh;
+	background-color: black;
+	opacity: .5;
+	left: 0;
+	top: 0;
+	display: none;
+}
+
+.upload-file-popup{
+	height: 400px;
+	width: 300px;
+	background-color: black;
+
+	border-style: solid;
+	border-width: 3px;
+	border-color: #588dff;
+
+	position: absolute;
+
+	top : calc( (100vh / 2) - 200px );
+	left: calc( (100vw / 2) - 150px );
+	z-index: 11;
+
+	display: none;
+	
+}
+
+.upload-file-popup-header{
+	background-color: #0074e8;
+	height: 20%;
+	width: 100%;
+
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+
+.upload-file-popup-header-title{
+	color: white;
+
+	font-family: ubuntu;
+	font-size: 18pt;
+}
+
+
+.upload-file-popup-content{
+
+	height: 80%;
+	width: 100%;
+	padding: 
+	display: flex;
+	flex-flow: column;
+
+}
+
+
+.upload-file-popup-select{
+	height: 50%;
+	background-color: #f5f5f5;
+	margin: 0;
+
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.upload-file-popup-selectfile{
+	width: 80%;
+	height: 30%;
+	background-color: #0074e8;
+	color: white;
+	cursor: pointer;
+
+}
+
+.upload-file-popup-label{
+	font-family: ubuntu;
+	color: red;
+	display: none;
+}
+
+.upload-file-popup-progress-container{
+	width: 80%;
+}
+.upload-file-popup-progress{
+	height: 20px;
+	width: 0%;
+	background-color: blue;
+	display: none;
+	transition: 1s width; 
+	
+}
+
+
+.upload-file-popup-buttons{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column;
+	height: 50%;
+
+	background-color: #f5f5f5;
+}
+
+.upload-file-popup-buttons-upload{
+	width: 40%;
+	height: 20%;
+	background-color: #c3c3c3;
+	color: white;
+	cursor: not-allowed;
+}
+
+.upload-file-popup-buttons-cancel{
+	width: 40%;
+	height: 20%;
+	background-color: #0074e8;
+	color: white;
+	cursor: pointer;
+}
+
+
+
+
+ 		.share-file-popup-overlay{
+ 			background: black;
+ 			width: 100vw;
+ 			height: 100vh;
+
+ 			position: fixed;
+ 			opacity: 0.5;
+ 			top: 0;
+ 			display: none;
+ 		}
+
+
+ 		.share-file-popup{
+
+ 			background-color: #e5e5e5;
+ 			width: 300px;
+ 			height: 500px;
+
+ 			position: absolute;
+ 			top: calc( (100vh / 2 ) - 250px );
+ 			left: calc( (100vw / 2 ) - 150px );
+ 			border-radius: 40px;
+ 			
+ 			display: none;
+
+ 		}
+
+ 		.share-file-popup-header{
+ 			height: 10%;
+
+ 			background-color: #0074e8;
+ 			display: flex;
+ 		}
+ 		.share-file-popup-header-titile{
+ 			width: 90%;
+ 			font-family: ubuntu;
+ 			font-size: 20pt;
+ 			color: white;
+
+ 			display: flex;
+ 			justify-content: flex-start;
+ 			align-items: center;
+
+ 			padding-left:  10px;
+ 		}
+
+ 		.share-file-popup-header-sharestatus{
+ 			height: 100%;
+ 			width: 10%;
+ 			display: flex;
+ 			justify-content: center;
+ 			align-items: center;
+ 		}
+ 		
+
+ 		.share-file-popup-userslist{
+ 			
+ 			height: 60%;
+ 			overflow: auto;
+
+ 			display: flex;
+ 			flex-flow: column;
+ 			background-color: #efebe7;
+
+ 		}
+ 		
+ 		.share-file-popup-userslist-user{
+ 			display: flex;
+ 			justify-content: space-around;
+
+ 			background-color: #ddddff;
+ 			padding : 10px 0;
+ 			margin: 5px 0;
+
+
+
+ 		}
+
+ 		.share-file-popup-userslist-user:hover {
+ 			background-color: #2f66ff;
+
+ 		}
+
+ 		.share-file-popup-userslist-user:hover .share-file-popup-userslist-username{
+ 			color: white;
+ 		}
+ 		
+ 		.share-file-popup-userslist-username{
+ 			width: 60%;
+ 			font-family: ubuntu;
+ 		}
+ 		
+ 		.share-file-popup-userslist-remove{
+ 			width: auto;
+ 			background-color: #de1a0b;
+ 			color: white;
+ 			border:none;
+ 			border-radius: 10px;
+ 			border-style: solid;
+ 			border-width: 0;
+			cursor: pointer;
+ 		}
+
+ 		.share-file-popup-userslist-remove:hover{
+
+ 			opacity: .8;
+ 		}
+
+
+		.share-file-popup-adduser{
+			display: flex;
+			margin-top: 30px;
+			justify-content: space-around;
+
+		}
+
+		.share-file-popup-adduser-input{
+			width: 60%;
+			border: none;
+			outline: none;
+			border-bottom-style: solid;
+			border-bottom-width: 3px;
+			border-bottom-color: #0074e8;
+			background-color: #e5e5e5;
+			font-family: ubuntu;
+		}
+		.share-file-popup-adduser-addbutton{
+			width: 30%;
+			background-color: #0074e8;
+			color: white;
+			padding: 0 10px;
+			border:none;
+			border-radius:  10px;
+			cursor: pointer;
+		}
+
+		.share-file-popup-adduser-addbutton:hover{
+			opacity: .8;
+		}
+
+
+		.share-file-popup-save{
+			display: flex;
+			justify-content: space-around;
+
+			margin-top: 30px;
+		}
+		.share-file-popup-save-savebutton{
+
+			background-color: #0074e8;
+			color: white;
+			padding: 10px 20px;
+			border:none;
+			border-radius: 10px;
+			
+			cursor: pointer;
+
+		}
+
+		.share-file-popup-save-savebutton:hover{
+
+			opacity: .8;
+		}
+
+
+		.share-file-popup-save-cancelbutton{
+			background-color: #de1a0b;
+			color: white;
+			padding: 10px 20px;
+			border:none;
+			border-radius: 10px;
+			
+			cursor: pointer;
+		}
+
+		.share-file-popup-save-cancelbutton:hover{
+			opacity: .8;
+		}
